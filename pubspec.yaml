@@ -40,7 +40,14 @@ dependencies:
   intl: ^0.19.0
   image_picker: ^1.1.2
   file_picker: ^8.1.4
-
+  dio: ^5.7.0
+  video_player: ^2.9.2
+  flutter_svg: ^2.0.16
+  # firebase dependencies
+  #===============================
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  #===============================
 dev_dependencies:
   flutter_test:
     sdk: flutter

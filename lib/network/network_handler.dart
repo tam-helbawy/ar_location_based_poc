@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:base/network/app_end_points.dart';
 import 'package:dio/dio.dart';
 
@@ -17,6 +19,8 @@ class NetworkHandler {
     Map<String, dynamic>? queryParameters,
   }) async {
     try {
+      log('${dio.options.baseUrl}$url');
+
       return await dio.get(
         url,
         queryParameters: queryParameters,

@@ -15,5 +15,5 @@ class DeleteEvent extends AppEvents {
 }
 class ClickEvent extends AppEvents {
   final dynamic data;
-  ClickEvent(this.data);
+  ClickEvent({this.data});
 }
