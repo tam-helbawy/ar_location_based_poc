@@ -3,6 +3,7 @@ import 'package:base/features/products_search/domain/models/category.dart';
 import 'package:base/features/products_search/domain/repo_interface/products_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../data/repo_imp/product_firebase_repo_imp.dart';
 import '../../data/repo_imp/product_repo_imp.dart';
 
 class ProductsCategoriesBloc extends Cubit<AppStates>{
@@ -13,7 +14,7 @@ class ProductsCategoriesBloc extends Cubit<AppStates>{
   //======================================== Variables
   //========================================
   List<Category> categories = [];
-  ProductsRepoInterface _repo = ProductsRepoImp();
+  ProductsRepoInterface _repo = ProductFirebaseRepoImp();
   //========================================
   //======================================== Functions
   //========================================

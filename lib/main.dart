@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
             theme: SettingsCubit.instance.isDarkMode ? ThemeData.dark() : ThemeData.light(),
             locale: SettingsCubit.instance.locale,
             onGenerateRoute: generateRoute,
-            initialRoute: AppRoutes.login,
+            initialRoute: AppRoutes.main,
             supportedLocales: const [
               Locale('ar'),
               Locale('en'),
