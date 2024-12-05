@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:base/configurations/app_states.dart';
+import 'package:base/features/products_search/data/repo_imp/product_firebase_repo_imp.dart';
 import 'package:base/features/products_search/domain/models/category.dart';
 import 'package:base/features/products_search/domain/repo_interface/products_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,7 +20,7 @@ class ProductsSearchBloc extends Cubit<AppStates> {
   bool showGrid = false;
   Category? selectedCategoryFilter;
   List<Product> products = [];
-  final ProductsRepoInterface _repo = ProductsRepoImp();
+  final ProductsRepoInterface _repo = ProductFirebaseRepoImp();
 
   //========================================
   //======================================== Functions
