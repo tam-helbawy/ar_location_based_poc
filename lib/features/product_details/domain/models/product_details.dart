@@ -1,7 +1,7 @@
 class ProductDetails{
   String name;
   String description;
-  double price;
+  int price;
   List<String> imageUrls;
   ProductDetails({required this.name, required this.description, required this.price, required this.imageUrls});
   factory ProductDetails.fromJson(Map<String, dynamic> json) {
