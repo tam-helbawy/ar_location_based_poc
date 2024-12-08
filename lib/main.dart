@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:base/app/bloc/settings_cubit.dart';
 import 'package:base/configurations/app_states.dart';
 import 'package:base/features/products_search/ui/blocs/products_categories_bloc.dart';
@@ -8,8 +10,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import 'firebase_options.dart';
+import 'handlers/permission_handler.dart';
 import 'navigation/route_generator.dart';
 
 void main() async {
@@ -17,6 +21,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  bool status = await PermissionHandler().checkLocationPermission();
+  log('Contacts Permission Status: $status');
   runApp(const MyApp());
 }
 

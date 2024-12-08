@@ -8,11 +8,9 @@ class ProductDetailsFirebaseRepoImp implements ProductDetailsRepoInterface {
   Future<ProductDetails> getProductDetails(String productId) async {
     var db = FirebaseFirestore.instance;
     //============= test adding
-    db.collection('products').add({
-      "name": "product 1",
-      "description": "product 1 description",
-      "price": 100,
-      "imageUrl": "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    db.collection('products').doc("mohamed").update({
+
+      "name": "product 3",
     });
     //=========================================
     DocumentSnapshot response = await db.collection('products').doc(productId).get();
