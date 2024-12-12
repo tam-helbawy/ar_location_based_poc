@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "335877243346",
+    "project_id": "e-commerce-test-app-af433",
+    "storage_bucket": "e-commerce-test-app-af433.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335877243346:android:802be0cb30ab05f993880b",
+        "android_client_info": {
+          "package_name": "com.academy.commerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAblFrrURyMBsJqinTsqJdwYUOlAFlyCBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

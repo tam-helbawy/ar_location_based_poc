@@ -39,6 +39,8 @@ class NetworkHandler {
     Map<String, dynamic>? queryParameters,
   }) async {
     try {
+      log('${dio.options.baseUrl}$url');
+
       return await dio.get(
         url,
         queryParameters: queryParameters,
