@@ -1,0 +1,240 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.4.0)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_volume",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 301,
+            "type": "VEC3",
+            "max": [
+                0.12362589687108994,
+                1.1201030015945435,
+                0.6804248094558716
+            ],
+            "min": [
+                -0.12362620234489441,
+                -1.1201030015945435,
+                -0.6804248094558716
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 301,
+            "type": "VEC3",
+            "max": [
+                0.9969444870948792,
+                0.9728474617004395,
+                0.9728202819824219
+            ],
+            "min": [
+                -0.9964473843574524,
+                -0.5031176209449768,
+                -0.9728203415870667
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 492,
+            "type": "SCALAR",
+            "max": [
+                300
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC3",
+            "max": [
+                0.14138540625572205,
+                0.6893481016159058,
+                0.2499953955411911
+            ],
+            "min": [
+                -0.14138540625572205,
+                0.19053949415683746,
+                -0.24999549984931946
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC3",
+            "max": [
+                0.9998929500579834,
+                0.13798093795776367,
+                0.14297278225421906
+            ],
+            "min": [
+                -0.9998929500579834,
+                -0.13798436522483826,
+                -0.14296992123126984
+            ]
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 204,
+            "type": "SCALAR",
+            "max": [
+                119
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 12888,
+            "uri": "location_mark_0.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 3612,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 3612,
+            "byteLength": 3612,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 7224,
+            "byteLength": 1968,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 9192,
+            "byteLength": 1440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 10632,
+            "byteLength": 1440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 12072,
+            "byteLength": 816,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "mat8",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.9100000262260437,
+                    0.05000000074505806,
+                    0.029999999329447746,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "mat23",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    0.009999999776482582,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "meshes[0]",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "meshes[1]",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 1,
+                    "indices": 5,
+                    "attributes": {
+                        "POSITION": 3,
+                        "NORMAL": 4
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "location_mark",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "Node",
+            "children": [
+                2,
+                3
+            ],
+            "extras": {
+                "name": "Node"
+            }
+        },
+        {
+            "name": "Node-Mesh",
+            "mesh": 0
+        },
+        {
+            "name": "Node-Mesh_1",
+            "mesh": 1
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

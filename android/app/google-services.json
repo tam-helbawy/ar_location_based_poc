@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "335877243346",
-    "project_id": "e-commerce-test-app-af433",
-    "storage_bucket": "e-commerce-test-app-af433.firebasestorage.app"
+    "project_number": "102450018426",
+    "project_id": "innova-office-guide",
+    "storage_bucket": "innova-office-guide.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:335877243346:android:802be0cb30ab05f993880b",
+        "mobilesdk_app_id": "1:102450018426:android:9a363493a61ae4cdbde3c3",
         "android_client_info": {
-          "package_name": "com.academy.commerce"
+          "package_name": "innova.guide.app"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAblFrrURyMBsJqinTsqJdwYUOlAFlyCBM"
+          "current_key": "AIzaSyAP30H4eNL4UC6-rcCOa4R7gLJQPSnYCjY"
         }
       ],
       "services": {
