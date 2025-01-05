@@ -1,7 +1,6 @@
-import 'dart:developer';
-
 import 'package:base/app/bloc/settings_cubit.dart';
 import 'package:base/configurations/app_states.dart';
+import 'package:base/handlers/security/AESEncryptor.dart';
 import 'package:base/navigation/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,6 +10,7 @@ import 'navigation/route_generator.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  AESEncryptor.init();
   runApp(const MyApp());
 }
 

@@ -47,6 +47,8 @@ dependencies:
   flutter_svg: ^2.0.16
   permission_handler: ^11.3.1
   url_launcher: ^6.3.1
+  encrypt: ^5.0.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
