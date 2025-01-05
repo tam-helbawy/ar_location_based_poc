@@ -48,6 +48,7 @@ dependencies:
   permission_handler: ^10.1.0
   url_launcher: ^6.3.1
   encrypt: ^5.0.3
+<<<<<<< HEAD
   ar_flutter_plugin: ^0.7.3
   geolocator: ^9.0.0
   flutter_compass: ^0.8.1
@@ -58,6 +59,8 @@ dependencies:
   firebase_core: ^3.8.0
   cloud_firestore: ^5.5.1
   #===============================
+=======
+>>>>>>> c3b96afd2f6358877684d34d4edd5f9df1044aba
 
 dev_dependencies:
   flutter_test:

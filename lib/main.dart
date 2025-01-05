@@ -3,6 +3,8 @@ import 'package:base/configurations/app_states.dart';
 import 'package:base/configurations/app_theme.dart';
 import 'package:base/handlers/security/AESEncryptor.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:base/handlers/security/AESEncryptor.dart';
+import 'package:base/navigation/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -15,6 +17,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  AESEncryptor.init();
   runApp(const MyApp());
 }
 
