@@ -1,4 +1,4 @@
-import 'package:base/features/services_screen.dart';
+import 'package:base/features/home/ui/screens/home_screen.dart';
 import 'package:base/handlers/qr_code_handler.dart';
 import 'package:base/handlers/security/AESEncryptor.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +20,7 @@ Route generateRoute(settings) {
     case AppRoutes.seatView360:
       return _createRoute(SeatView360Screen());
     case AppRoutes.services:
-      return _createRoute(ServicesScreen());
+      return _createRoute(HomeScreen());
     default:
       return _createRoute(SizedBox());
   }

@@ -10,8 +10,8 @@ plugins {
 
 android {
     namespace = "innova.guide.app"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 34
+    ndkVersion = 34
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
