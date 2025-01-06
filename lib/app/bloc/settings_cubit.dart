@@ -10,6 +10,8 @@ class SettingsCubit extends Cubit<AppStates>{
   //========================================
   bool isDarkMode = false;
   Locale locale = Locale('en');
+  bool isEnglish = true;
+  bool isTablet = false;
   //========================================
   //======================================== Functions
   //========================================
