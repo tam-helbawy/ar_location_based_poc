@@ -46,7 +46,7 @@ class AddonCategoriesBottomSheet extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: drawSvgIcon("circled_close"),
+                  icon: drawSvgIcon("circled_close.svg"),
                 ),
               ],
             ),

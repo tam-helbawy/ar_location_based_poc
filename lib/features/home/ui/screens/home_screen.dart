@@ -1,3 +1,6 @@
+import 'package:base/features/book_tickets/ui/screens/book_tickets_main_screen.dart';
+import 'package:base/features/book_tickets/ui/viewmodel/book_ticket_bloc.dart';
+import 'package:base/features/book_tickets/ui/viewmodel/venue_seats_bloc.dart';
 import 'package:base/navigation/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -44,6 +47,27 @@ class HomeScreen extends StatelessWidget {
               );
             },
             title: 'Book Add-Ons',
+          ),
+          SizedBox(height: 16),
+          ServiceCardView(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MultiBlocProvider(
+                    providers: [
+                      BlocProvider(create: (context) => BookTicketBloc()),
+                      BlocProvider(
+                        create: (context) => VenueSeatsBloc(eventId: 1, venueId: 2)..getSeats(),
+                      ),
+                    ],
+                    child: const BookTicketsMainScreen(),
+                  ),
+                ),
+              );
+
+            },
+            title: 'Book Tickets',
           ),
         ]),
       ),
