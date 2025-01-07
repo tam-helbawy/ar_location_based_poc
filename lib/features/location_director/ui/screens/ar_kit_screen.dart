@@ -3,6 +3,7 @@ import 'package:base/configurations/app_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vector_math/vector_math_64.dart' as vector;
+
 import '../blocs/locatoin_director_bloc.dart';
 
 class LocationRouteARView extends StatefulWidget {
@@ -27,7 +28,8 @@ class _LocationRouteARViewState extends State<LocationRouteARView> {
         assetType: AssetType.flutterAsset,
         position: widget.routePoints[index],
         scale: vector.Vector3(1, 1, 1),
-        url: "assets/glb/${index != widget.routePoints.length - 1 ? "mark" : "location_mark"}.gltf",
+        url:
+            "assets/glb/${index != widget.routePoints.length - 1 ? "result" : "location_mark"}.gltf",
       );
       this.arkitController.add(node);
     }

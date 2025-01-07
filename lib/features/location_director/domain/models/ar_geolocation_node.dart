@@ -1,8 +1,9 @@
-import 'dart:math';
 import 'dart:developer' as dev;
+import 'dart:math';
+
 import 'package:ar_flutter_plugin_flutterflow/models/ar_node.dart';
 import 'package:base/features/location_director/domain/models/map_location.dart';
-import 'package:vector_math/vector_math_64.dart' ;
+import 'package:vector_math/vector_math_64.dart';
 
 class ARGeolocationNode extends ARNode {
   final MapLocation location;
@@ -15,7 +16,7 @@ class ARGeolocationNode extends ARNode {
     super.name,
     super.rotation,
     super.scale,
-  }){
+  }) {
     super.position = _arWorldPosition();
   }
 
@@ -46,6 +47,4 @@ class ARGeolocationNode extends ARNode {
     dev.log("Helbawy relative: $relativeLocation");
     return relativeLocation;
   }
-
 }
-

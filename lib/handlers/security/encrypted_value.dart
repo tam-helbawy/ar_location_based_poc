@@ -5,7 +5,10 @@ class EncryptedValue {
   String get encryptedValue => _encryptedValue;
   String get ivKey => _ivKey;
 
-  EncryptedValue({required String encryptedValue, required this.valueType, String? ivKey}) {
+  EncryptedValue(
+      {required String encryptedValue,
+      required this.valueType,
+      String? ivKey}) {
     _encryptedValue = encryptedValue;
     _ivKey = ivKey ?? "";
   }

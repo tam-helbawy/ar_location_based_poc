@@ -1,9 +1,7 @@
 import 'package:base/features/location_director/ui/blocs/locatoin_director_bloc.dart';
-import 'package:base/features/location_director/ui/screens/augmented_reality_screen.dart';
+import 'package:base/features/location_director/ui/screens/ar_kit_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../../../configurations/app_states.dart';
 
 class ChooseLocationScreen extends StatelessWidget {
   const ChooseLocationScreen({super.key});
@@ -20,7 +18,7 @@ class ChooseLocationScreen extends StatelessWidget {
       body: SafeArea(
         child: ListView.separated(
           itemCount: locations.length,
-          padding: EdgeInsets.all(24),
+          padding: const EdgeInsets.all(24),
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
@@ -28,7 +26,8 @@ class ChooseLocationScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => BlocProvider(
-                      create: (context) => LocationDirectorBloc(locations[index]),
+                      create: (context) =>
+                          LocationDirectorBloc(locations[index]),
                       child: const AugmentedRealityScreen(),
                     ),
                   ),
