@@ -17,3 +17,19 @@ class ClickEvent extends AppEvents {
   final dynamic data;
   ClickEvent({this.data});
 }
+class RefreshEvent extends AppEvents {
+  final dynamic data;
+  RefreshEvent({this.data});
+}
+class PayEvent extends AppEvents {
+  final dynamic data;
+  PayEvent({this.data});
+}
+class GoToNextPage extends AppEvents {
+  final dynamic data;
+  GoToNextPage({this.data});
+}
+class GoToPreviousPage extends AppEvents {
+  final dynamic data;
+  GoToPreviousPage({this.data});
+}

@@ -13,9 +13,16 @@ subprojects {
     afterEvaluate {project ->
         if (project.hasProperty("android")) {
             android {
-                compileSdkVersion = 31
-                buildToolsVersion = "31.0.0"
+                compileSdkVersion = 34
+                buildToolsVersion = "34.0.0"
             }
+        }
+    }
+}
+subprojects {
+    afterEvaluate {
+        if (it.name == "ar_flutter") {
+            it.android.buildTypes.release.minifyEnabled = false
         }
     }
 }
