@@ -1,6 +1,5 @@
 import 'package:base/features/services_screen.dart';
 import 'package:base/handlers/qr_code_handler.dart';
-import 'package:base/handlers/security/AESEncryptor.dart';
 import 'package:flutter/material.dart';
 
 import '../features/location_director/ui/screens/scanning_qr_screen.dart';
