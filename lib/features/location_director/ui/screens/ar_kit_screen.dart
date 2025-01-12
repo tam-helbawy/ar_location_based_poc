@@ -53,8 +53,8 @@ class _LocationRouteARViewState extends State<LocationRouteARView> {
   }
 }
 
-class AugmentedRealityScreen extends StatelessWidget {
-  const AugmentedRealityScreen({super.key});
+class AugmentedRealityForIOSScreen extends StatelessWidget {
+  const AugmentedRealityForIOSScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

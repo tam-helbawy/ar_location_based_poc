@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:base/features/location_director/ui/blocs/locatoin_director_bloc.dart';
 import 'package:base/features/location_director/ui/screens/ar_kit_screen.dart';
+import 'package:base/features/location_director/ui/screens/augmented_reality_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -28,7 +31,9 @@ class ChooseLocationScreen extends StatelessWidget {
                     builder: (context) => BlocProvider(
                       create: (context) =>
                           LocationDirectorBloc(locations[index]),
-                      child: const AugmentedRealityScreen(),
+                      child: Platform.isIOS
+                          ? const AugmentedRealityForIOSScreen()
+                          : const AugmentedRealityForAndroidScreen(),
                     ),
                   ),
                 );
